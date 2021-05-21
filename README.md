@@ -9,7 +9,8 @@ clone this repository
 ```bash
 git clone https://github.com/thariq1211/simple-github-repos-finder
 cd simple-github-repos-finder
-npm start | yarn
+npm install | yarn
+npm start | yarn start
 ```
 
 ## Available Scripts
