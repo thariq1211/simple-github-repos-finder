@@ -24,7 +24,12 @@ function App() {
     user === "" && setResult([]);
   }, [user]);
 
-  return <></>;
+  return (
+    <div
+      className="container"
+      style={{ display: "flex", justifyContent: "center" }}
+    ></div>
+  );
 }
 
 export default App;
