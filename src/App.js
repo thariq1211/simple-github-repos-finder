@@ -28,7 +28,31 @@ function App() {
     <div
       className="container"
       style={{ display: "flex", justifyContent: "center" }}
-    ></div>
+    >
+      <header className="App-header">
+        <h2>
+          Aplikasi pencari repository{" "}
+          <a style={{ textDecoration: "none" }} href="//github.com">
+            GitHub
+          </a>
+        </h2>
+        input username : {` `}
+        <input
+          placeholder="input username"
+          onChange={(e) => setUser(e.target.value)}
+          value={user}
+          onKeyDown={(e) => e.code === "Enter" && getRepository(user)}
+        />
+        <button
+          type="submit"
+          onClick={() => {
+            getRepository(user);
+          }}
+        >
+          submit
+        </button>
+      </header>
+    </div>
   );
 }
 
