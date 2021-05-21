@@ -6,7 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 clone this repository
 
-`git clone https://github.com/thariq1211/simple-github-repos-finder cd simple-github-repos-finder npm start | yarn `
+```bash
+git clone https://github.com/thariq1211/simple-github-repos-finder
+cd simple-github-repos-finder npm start | yarn
+```
 
 ## Available Scripts
 
