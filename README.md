@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## How to
+
+clone this repository
+
+`git clone https://github.com/thariq1211/simple-github-repos-finder cd simple-github-repos-finder npm start | yarn `
+
 ## Available Scripts
 
 In the project directory, you can run:
