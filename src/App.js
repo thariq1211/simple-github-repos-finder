@@ -20,6 +20,10 @@ function App() {
       .catch((err) => console.log(err));
   };
 
+  useEffect(() => {
+    user === "" && setResult([]);
+  }, [user]);
+
   return <></>;
 }
 
