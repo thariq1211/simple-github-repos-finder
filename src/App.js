@@ -51,6 +51,27 @@ function App() {
         >
           submit
         </button>
+        <p style={{ margin: "10px 0", fontWeight: "bold", fontSize: "14pt" }}>
+          List repository for {user || "..."}
+        </p>
+        {result.length > 0 ? (
+          result?.map((item) => (
+            <li style={{ fontSize: "12pt" }}>
+              {item.name} : <a href={item.html_url}>{item.html_url}</a>
+            </li>
+          ))
+        ) : isFetching ? (
+          <p>loading ...</p>
+        ) : isError ? (
+          <p>{isError}</p>
+        ) : result?.message ? (
+          <p>{result.message}</p>
+        ) : (
+          <>
+            <br />
+            <p>...</p>
+          </>
+        )}
       </header>
     </div>
   );
